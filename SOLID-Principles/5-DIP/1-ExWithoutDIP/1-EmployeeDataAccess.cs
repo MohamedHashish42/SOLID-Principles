@@ -4,8 +4,11 @@
     {
         public Employee GetEmployeeDetails(int id)
         {
-            // In real time get the employee details from db
-            //but here we are hard coded the employee details
+            /*
+             In the  real scenario get the employee details from Db
+             but here we are hard coded the employee details
+             */
+
             Employee emp = new Employee()
             {
                 ID = id,

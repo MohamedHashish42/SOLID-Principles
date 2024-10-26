@@ -1,11 +1,15 @@
 ﻿#region Liskov Substitution Principle
-using SOLID_Principles.LSP;
+using ExWithoutUsingLSP = SOLID_Principles.LSP.ExWithoutUsingLSP;
+using ExWithUsingLSP = SOLID_Principles.LSP.ExWithUsingLSP;
 
-Apple apple = new Orange();
+
+//Without LSP
+ExWithoutUsingLSP.Apple apple = new ExWithoutUsingLSP.Orange();
 Console.WriteLine(apple.GetColor());
 
-Fruit fruit = new Orange2();
+//With LSP
+ExWithUsingLSP.Fruit fruit = new ExWithUsingLSP.Orange();
 Console.WriteLine(fruit.GetColor());
-fruit = new Apple2();
+fruit = new ExWithUsingLSP.Apple();
 Console.WriteLine(fruit.GetColor());
 #endregion

@@ -1,17 +1,17 @@
-﻿namespace SOLID_Principles.LSP
+﻿namespace SOLID_Principles.LSP.ExWithUsingLSP
 {
     public abstract class Fruit
     {
         public abstract string GetColor();
     }
-    public class Apple2 : Fruit
+    public class Apple : Fruit
     {
         public override string GetColor()
         {
             return "Red";
         }
     }
-    public class Orange2 : Fruit
+    public class Orange : Fruit
     {
         public override string GetColor()
         {

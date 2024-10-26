@@ -1,4 +1,4 @@
-﻿namespace SOLID_Principles.LSP
+﻿namespace SOLID_Principles.LSP.ExWithoutUsingLSP
 {
     public class Apple
     {
